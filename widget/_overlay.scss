@@ -1,0 +1,102 @@
+/* ######### OVERLAY - Stylings for overlays and content in overlays */
+.post-info { margin-bottom: 5px; }
+.contentWrap img { margin: 5px; }
+
+.apple_overlay {                             // the overlayed element
+   display: none;                            // hide overlay initially
+   background-image: url(http://engineering.olemiss.edu/~atef/img/background.png); // growing background image
+   background-color: #444;
+   width: 640px;                             // width after the growing animation finishes; height is automatically calculated
+   padding: 35px;
+   font-size: 11px;
+   border: 1px solid #444;
+   border-radius: 40px;
+   border-top-right-radius: 0;
+   .contentWrap {
+      height: 500px;
+      overflow-y: auto;
+      overflow-x: hidden;
+      color: white; }
+   .close {                      // default close button positioned on upper right corner
+      background-image: url(/images/overlay/blue-close.png);
+      position: absolute;
+      right: 5px;
+      top: 5px;
+      cursor: pointer;
+      height: 35px;
+      width: 35px; }
+   a { color: yellow; }
+   p { color: white; }
+   /* ## Calendar overlays - Displays schedules for time sensitive events */
+   .calendar {
+      width: 100%;
+      border-spacing: 0;
+      border-collapse: collapse;
+      margin-bottom: 5px;
+      td, th {
+         padding:0 10px;
+         height:2em; }
+      tr.chartcolor td, tr.chartcolor th { background-color:black; } } }
+
+/* ## Profile overlays - Usually displays personal information for faculty and staff */
+table.profile {
+   text-align: left;
+   padding-top: 20px;
+   font-size: 10pt;
+   img { 
+     border: 1px solid #999999;
+     width: 90px;
+     height: auto;
+   }
+   td {
+      vertical-align:top;
+      padding: .5em;
+      &.picture {
+         margin-left: 10px;
+         padding-left: 7px;
+         padding-top: 5px; 
+         text-align: left;
+         vertical-align: top; }
+      &.name {
+         border-bottom: 1px solid #777;
+         padding-top:3px;
+      }
+      &.rank {
+         font-style: italic;
+         padding-bottom: 5px; }
+      &.email { width: 100%; }
+      &.assoc { font-size: 9pt; }
+      &.name { font-size: 12pt; }
+      &.assoc {
+         padding-left: 10px;
+         text-align: justify;
+         padding-top: 10px; }
+      &.topic {
+         width: 50px;
+         padding-left: 10px;
+         padding-right: 1em; }
+      &.publications {
+         padding-top: 20px;
+         div {
+            border-bottom: 1px solid #999;
+            padding-bottom: 1px; }
+         ul {
+            padding-left: 20px;
+            padding-right: 20px; }
+         li {
+            list-style: square outside;	
+            padding-bottom: 10px; }
+         .pub_jour { font-style: italic; } } } }
+
+/* ## Course overlays - Usually displays information about a course (class) */
+table.course_info {
+   padding-top: 30px;
+   .course_id {
+      padding-left: 1px;
+      font-size: 10pt; }
+   .course_name { font-size: 14pt; }
+   .course_title { border-bottom: 1px solid #777; }
+   .course_desc {
+      text-align: justify;
+      padding: 10px; } }
+/* END OVERLAY ######### */

@@ -1,0 +1,22 @@
+/* Enables cross-browser smooth color gradients.
+ * Only allows top down gradients.
+ * Works for all HTML5 compliant browsers + oldIE
+ * Falls back to a solid background color on non-supported browsers
+ *
+ * @param $from the color to begin the gradient with at the top of the element;
+ *     also the fallback color for non-supported browsers
+ * @param $to the color to end the gradient with at the bottom of the element
+ *
+ * Example:
+ *     @include gradient(red, black);
+ */
+@mixin gradient($from, $to) {
+  background-color: $from;
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#{ie-hex-str($from)}', endColorstr='#{ie-hex-str($to)}');
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($from), to($to));
+  background-image: -webkit-linear-gradient(top, $from, $to);
+  background-image:    -moz-linear-gradient(top, $from, $to);
+  background-image:     -ms-linear-gradient(top, $from, $to);
+  background-image:      -o-linear-gradient(top, $from, $to);
+  background-image:         linear-gradient(top, $from, $to);
+}

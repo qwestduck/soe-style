@@ -1,0 +1,53 @@
+/* ######### LEFTCOL - Grey vertical menu found on the left side of most secondary pages */
+#leftcol {
+   width: 240px;
+   height: 600px;
+   background: $gray;
+   font-size: 12px;
+   vertical-align: top;
+   float: left;
+   overflow: hidden;
+   .glossymenu {
+      .menuitem {
+         &:link, &:visited, &:active {
+            /*background-image: url('/img/bk-navi.png');*/
+            @include gradient($gray, $darker-gray);
+            font-weight: bold;
+            color: black;
+            display: block;
+            position: relative;              // To help in the anchoring of the ".statusicon" icon image
+            line-height: 2em;
+            height: 2em;
+            padding-left: 10px;
+            text-decoration: none;
+            border-bottom: 1px solid #e8e8e8;
+            overflow: hidden; }
+         &:hover {
+            background-image: url('/img/glossyback2.gif');
+            background-repeat: repeat-x; }
+         .statusicon {                       // icon image that gets dynamically added to headers
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            border: none; } }
+      .submenu ul {
+         list-style-type: none;
+         li {
+            border-bottom: 1px solid #e3e0d7;
+            a {
+               &:link, &:active, &:visited {
+                  /*background-color: #d6d0bd;*/
+                  background-color:$gray;
+                  display: block;
+                  font: normal 13px "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, sans-serif;
+                  color: black;
+                  text-decoration: none;
+                  height: 15px;
+                  overflow: hidden;
+                  padding: 2px 0;
+                  padding-left: 10px; }
+               &:hover { background-image: url('/img/glossyback.gif'); } } } } }
+   .long-titles .menuitem {
+      height: 3em !important;
+      line-height: 1.5em !important; } }
+/* END LEFTCOL ######### */

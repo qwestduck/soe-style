@@ -1,0 +1,17 @@
+/* ######### PRINTER - Make pages printer friendly */
+@media print {
+   .shadow, #uhead, #header, #navigation, #leftcol, #footer, #newsblock .tabs { display:none !important; }
+   #content {
+      overflow: visible !important;
+      width: 100% !important;
+      border-left: none !important;
+      margin-left: 0 !important; }
+   #newsblock .accordion, #newsblock .accordion h2 {
+      border: none !important;
+      background: none !important;
+      display: block !important; }
+   #newsblock .pane { display: block !important; }
+   #newsblock .panes {
+      margin-left: 0 !important;
+      width: 100% !important; } }
+/* END PRINTER ######### */

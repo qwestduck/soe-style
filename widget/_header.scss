@@ -1,0 +1,57 @@
+/* ######### HEADER - Large blue bar with school name, logo, etc */
+#header {
+   #banner {
+      @include gradient($dark-blue, $darker-blue);
+      width: 950px;
+      height: 75px;
+      margin-bottom: 2px;
+      border-collapse: collapse;
+      #department a {
+            display: block;                  // Make the anchor act as a div
+            width: 100%;                    // Dimensions of the clickable space
+			height: 17px;
+            &:link, &:active, &:visited, &:hover { background-repeat: no-repeat; } }
+      #logo a {
+            display: block;                  // Make the anchor act as a div
+            width: 50px;                     // Dimensions of the clickable space
+            height: 75px;
+            padding-left: 15px;
+            &:link, &:active, &:visited { background: transparent url('/img/header-um-crest-red.png') no-repeat scroll center center; }
+            &:hover { background: transparent url('/img/header-um-crest-red-larger.png') no-repeat scroll center center; } }
+      #university a {
+            display: block;                  // Make the anchor act as a div
+            width: 650px;                    // Dimensions of the clickable space
+            height: 25px;
+            padding-top: 2px;
+            &:link, &:active, &:visited { background: transparent url('/img/header-um.png') no-repeat scroll bottom left; }
+            &:hover { background: transparent url('/img/header-um-hover.png') no-repeat scroll bottom left; } }
+      #soe a {
+            display: block;                  // Make the anchor act as a div
+            width: 650px;                    // Dimensions of the clickable space
+            height: 25px;
+            padding-bottom: 2px;
+            &:link, &:active, &:visited { background: transparent url('/img/header-soe.png') no-repeat scroll top left; }
+            &:hover { background: transparent url('/img/header-soe-hover.png') no-repeat scroll top left; } }
+      #search {
+         float: right;
+         margin: 5px 10px 2px 0;
+         height: 33px;
+         overflow: hidden;
+         #q {
+            color: #666;
+            font-size: 10px;
+            width: 120px;
+            height: 15px;
+            overflow: hidden; }
+         #searchbutton { vertical-align: middle; } }
+      #social {
+         float: right;
+         padding-top: 5px;
+         padding-right: 58px;
+         padding-bottom: 5px;
+         height: 30px;
+         overflow: hidden;
+         img {
+            width: 24px;
+            height: 24px; } } } }
+/* END HEADER ######### */

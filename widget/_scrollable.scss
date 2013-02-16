@@ -1,0 +1,73 @@
+.scrollable-controlribbon {
+    width:850px;
+    height:150px;
+    position:absolute;
+}
+
+.scrollable-controlribbon a.prev,
+.scrollable-controlribbon a.next {
+    width:30px;
+    height:30px;
+    margin-top:60px;
+    margin-left:10px;
+    margin-right:10px;
+    display:block;
+    float:left;
+    background:url(/img/hori_large.png) no-repeat;
+    cursor:pointer;
+
+    /* Hack to keep anchor from collapsing on some browsers */
+    font-size:1px;
+}
+
+.scrollable-controlribbon a.prev { clear:left; }
+
+.scrollable-controlribbon a.prev:hover { background-position:-30px 0; }
+
+.scrollable-controlribbon a.prev:active { background-position:-60px 0; }
+
+.scrollable-controlribbon a.next {
+    background-position:0 -30px;
+    clear:right;
+}
+
+.scrollable-controlribbon a.next:hover { background-position:-30px -30px; }
+
+.scrollable-controlribbon a.next:active { background-position:-60px -30px; }
+
+.scrollable-controlribbon a.disabled { background-image:none !important; }
+
+.scrollable-controlribbon .scrollable-select {
+    width:750px;
+    height:150px;
+    float:left;
+    position:relative;
+    overflow:hidden;
+}
+
+.scrollable-controlribbon .scrollable-select .scrollable-items {
+    /* Hack extremely large width to accomodate selections; this cannot be too large */
+    width:20000em;
+    position:absolute;
+    clear:both;
+}
+
+.scrollable-controlribbon .scrollable-select .scrollable-items div {
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    text-align:center;
+    float:left;
+}
+
+.scrollable-controlribbon .scrollable-select img {
+    width: 75px !important;
+    height: auto !important;
+    border:1px solid black !important;
+    border-radius:4px;
+    background-color: white;
+    margin:20px 5px 20px 21px;
+    vertical-align:middle;
+    max-height: 150px;
+    max-width: 150px;
+}

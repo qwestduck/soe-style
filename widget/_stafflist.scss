@@ -1,0 +1,87 @@
+/* ######### STAFFLIST - gray-ish shaded rectangles usually with contact info inside of them */
+#content .stafflist {
+   /*background: #e5dfd7;*/
+   background-color:$gray;
+   padding: 10px;
+   margin-bottom: 10px;
+   width: 650px;
+
+   a {
+      text-decoration: none;
+      color: navy;
+      &:link, &:visited, &:hover {
+         text-decoration: none;
+         color: navy; } } }
+
+#content .stafflist ul {
+   padding: 0;
+   margin: 10px; }
+
+#content .stafflist ul.image {
+   width: 300px;
+   float: right;
+   list-style: none; }
+
+#content .stafflist ul.image li.thumb img {
+   width: 77px;
+   height: 77px; }
+
+#content .stafflist .contact { margin: 0; }
+#content .stafflist .contact .website { clear: right; }
+
+#content .stafflist h2 {
+   margin: 0;
+   padding: 0; }
+
+#content .stafflist h3 {
+   font-size: 15px;
+   margin: 0;
+   padding: 0; }
+
+#content .stafflist img {
+   float: right;
+   margin: 0 0 10px 10px;
+   padding: 3px;
+   border: 1px solid #ccc;
+   background: white; }
+
+#content .stafflist p { padding: 0; }
+
+#content .stafflist object,
+#content .stafflist iframe {
+   position: relative;
+   margin-left: 10px;
+   padding-bottom: 5px;
+   float: right;
+   border: none; }
+
+#content .stafflist li {
+   margin-left: 15px;
+   padding: 0; }
+
+#content .stafflist ul.contact {
+   list-style: none;
+   padding: 0; }
+
+#content .stafflist ul.contact li {
+   margin: 0;
+   padding: 0;
+   font-weight: bold; }
+
+// stafflist2 and stafflist3 refer to nested lists inside a stafflist
+#content .stafflist2 {
+   background: #e5dfd7;
+   padding: 0;
+   margin-bottom: 0;
+   margin-left: 25px; }
+
+#content .stafflist2 li { list-style-type: circle; }
+
+#content .stafflist3 {
+   background: #e5dfd7;
+   padding: 0;
+   margin-bottom: 0;
+   margin-left: 25px; }
+
+#content .stafflist3 li { list-style-type: square; }
+/* END STAFFLIST ######### */

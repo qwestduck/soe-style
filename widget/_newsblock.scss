@@ -1,0 +1,101 @@
+/* ######### NEWSBLOCK - Tabbed UI element that normally holds news */
+#newsblock {
+   ul.tabs {
+      height: 30px;
+      list-style: none outside none;
+      margin: 0;
+      padding: 0;
+      li {
+         float: left;
+         list-style-image: none;
+         margin: 0;
+         padding: 0;
+         text-indent: 0; 
+         &.current a {
+            background-position: -420px -62px;
+            color: #000;
+            cursor: default; } }
+       a {
+          background: url("/img/tabbed_news/newblue.png") no-repeat scroll -420px 0 transparent;
+          color: #333;
+          display: block;
+          font-size: 11px;
+          height: 30px;
+          line-height: 30px;
+          margin: 0;
+          padding: 0;
+          position: relative;
+          text-align: center;
+          text-decoration: none;
+          top: 1px;
+          width: 134px;
+          &:active { outline: medium none; }
+          &:hover {
+             background-position: -420px -31px;
+             color: #FFF; }
+          &.current, &.current:hover {
+             background-position: -420px -62px;
+             color: #000;
+             cursor: default; } 
+          &.s {
+             background-position: -553px 0;
+             width: 81px;
+             &:hover { background-position: -553px -31px; }
+             &.current { background-position: -553px -62px; } }
+          &.l {
+             background-position: -248px 0;
+             width: 174px;
+             &:hover { background-position: -248px -31px; }
+             &.current { background-position: -248px -62px; } }
+          &.xl {
+             background-position: 0 0;
+             width: 248px;
+             &:hover { background-position: 0 -31px; }
+             &.current { background-position: 0 -62px; } } } }
+   .panes .pane { display: none; }
+   .accordion {
+      background: url("/img/tabbed_news/h300-1.png") repeat scroll 0 0 #e5dfd7;
+      border: 1px solid #333;
+      margin: 0 auto;
+      width: 100%;
+
+      h2 {
+         background: url("/img/tabbed_news/h30.png") repeat scroll 0 0 #CCC;
+         border-color: #FFF #FFF #DDD;
+         border-style: solid;
+         border-width: 1px;
+         cursor: pointer;
+         font-size: 14px;
+         font-weight: normal;
+         line-height: 14px;
+         padding: 5px 15px;
+         &.current {
+            background: url("/img/tabbed_news/h1_bg.png") no-repeat scroll -420px 0 transparent;
+            border-width: 2px;
+            border-top-width: 0;
+            border-bottom-width: 0;
+            cursor: default; } }
+      .pane {
+         border-color: #FFF;
+         border-style: solid;
+         border-width: 0 2px;
+         color: #000;
+         display: none;
+         font-size: 12px;
+         padding: 15px;
+         .post-info {
+            font-size: 8px;
+            color: #555;
+            border-bottom-style: solid;
+            border-bottom-width: 1px;
+            margin-bottom: 5px; }
+         img { display: none; }
+         p {
+            display: none; 
+            &.teaser { display: inline; } }
+         h3 {
+            color: #000;
+            font-size: 16px;
+            font-weight: normal;
+            margin: 0; } } } }
+/* END NEWSBLOCK ######### */

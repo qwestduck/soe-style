@@ -1,0 +1,21 @@
+/* ######### FOOTER - Section at the bottom of the page for copyright and accessibility information */
+#footer {
+   width: 950px;
+   line-height: 1.5em;
+   padding-top: 8px;
+   font-size: 9px;
+   text-align: left;
+   border-top: 1px solid #ccc;
+   a { text-decoration: none; }
+   ul { display: block; }
+   li {
+      float: left;
+      padding: 0 3px;
+      border-right: 1px solid #204290;
+      &.first { padding-left: 0; }
+      &.last { border-right: none; } }
+   .copyright { text-align: right; }
+   #acc_icon{ 
+      vertical-align: top;
+      margin-right: 2px; } }
+/* END FOOTER ######### */

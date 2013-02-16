@@ -1,0 +1,15 @@
+$default-link-color: #009;
+$off-white: #eff2fb;
+$dark-blue: #123376;
+$gray: #e4e1d2;
+$dark-red: darken(red, 10%);
+
+/* Event: Valentines Day (February 14) */
+/*body { background-color: lighten(pink, 5%) !important; }
+$dark-blue: red;
+$gray: pink;
+$dark-red: purple;*/
+
+$darker-blue: darken($dark-blue, 10%);
+$darker-gray: darken($gray, 10%);
+$darker-red: darken($dark-red, 10%);
