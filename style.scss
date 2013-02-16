@@ -18,7 +18,7 @@
  * NEWSBLOCK - Tabbed UI element that normally holds news
  * PRINTER - Make pages printer friendly
  */
- 
+
 @import "_mixins.scss";
 @import "_colors.scss";
 @import "_reset.scss";
@@ -28,11 +28,12 @@
 html, body { font-family: Arial, Helvetica, sans-serif; }
 
 a {
-   &:link, &:active, &:visited, &:hover { color: $default-link-color; } } // We all know that Dr. Elsherbeni likes his links blue!
+   &:link, &:active, &:visited, &:hover { color: $default-link-color; } }
 
-p { 
+p {
   margin: 1em 0;
   line-height: 1.5em; }
+
 .gallery {
    li {                                // Align gallery images in a grid. Don't forget this is used by all the departments and various other pages!
       display: inline-block;
@@ -47,21 +48,20 @@ p {
       height: 120px; } }
 
 #midsection {
-	position:relative;
-	margin-top:3px;
-	height:345px;
-	#maintext {
-		position:absolute;
-		top:0;
-		right:0;
-		width:355px;
-		height:337px;
-		/*background:#e5dfd7;*/
-                background-color:$gray;
-		color:#3f3a26;
-		overflow:hidden;
-		font-size:13px; } }
-		
+   position: relative;
+   margin-top: 3px;
+   height: 345px;
+   #maintext {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 355px;
+      height: 337px;
+      background-color: $gray;
+      color: #3f3a26;
+      overflow: hidden;
+      font-size: 13px; } }
+
 #container {
    margin: auto;
    width: 950px; }
@@ -69,31 +69,30 @@ p {
 /* ######### CONTENT/INNERCONTENT - Content area stylings */
 #secmid {
    width: 950px;
-   height: 650px;
-   /*background: white url(/img/bkgd-secondary.jpg) repeat-x;*/ }
+   height: 650px; }
 
 #innercontent { padding: 12px; }
 
 #content {
-   vertical-align:top;
+   vertical-align: top;
    width: 709px;
-   font-size:12px;
-   height:600px;                             // Scrolling content area css
-   overflow:auto; }
+   font-size: 12px;
+   height: 600px;                             // Scrolling content area css
+   overflow: auto; }
 
 #content h1.content_title{
-   text-align:center;
-   margin-left:auto;
-   margin-right:auto; }
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto; }
 
 #content p, #content ul, #content li {
-   padding:2px 0 2px 0;
-   line-height:18px; }
+   padding: 2px 0 2px 0;
+   line-height: 18px; }
 
 #content ul {
-   list-style-type:disc;
-   padding-left:20px;
-   padding-right:20px;
+   list-style-type: disc;
+   padding-left: 20px;
+   padding-right: 20px;
    margin-bottom: 1em; }
 
 #faculty #content {
@@ -108,9 +107,9 @@ p {
    padding-bottom: 4px; }
 
 #content h3 {
-   font-size:12px;
+   font-size: 12px;
    font-style: italic;
-   color:#009;
+   color: #009;
    padding-top: 12px;
    padding-bottom: 4px; }
 
@@ -165,9 +164,9 @@ p {
 .subtitle {
    color: #009;
    font-size: 12px;
-   font-weight:bold;
-   font-style:italic;
-   padding-bottom:4px; }
+   font-weight: bold;
+   font-style: italic;
+   padding-bottom: 4px; }
 /* END CONTENT/INNERCONTENT ######### */
 
 @import "widget/_header.scss";
