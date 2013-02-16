@@ -21,6 +21,11 @@
   background-image:         linear-gradient(top, $from, $to);
 }
 
+@mixin gradient-with-hover($from, $to) {
+  @include gradient($from, $to);
+  &:hover { @include gradient(lighten($from, 5%), lighten($to, 5%)); }
+}
+
 @mixin button-height($height) {
   height: $height;
   .label {

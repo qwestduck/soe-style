@@ -13,9 +13,9 @@
    #uhead3 { width: 95px; }
    #uhead4 { width: 105px; }
    #uhead5 { width: 60px; }
-   #uhead6 { width: 80px;
-	@include gradient($dark-red, $darker-red);
-	&:hover { @include gradient(lighten($dark-red, 5%), lighten($darker-red, 5%)); }}
+   #uhead6 {
+      width: 80px;
+      @include gradient-with-hover($dark-red, $darker-red); }
    #uhead7 { width: 100px; }
    #uhead8 { width: 45px; }
    #uhead9 { width: 57px; } }
