@@ -9,9 +9,8 @@
    overflow: hidden;
    .glossymenu {
       .menuitem {
+         @include button-gradient($gray);
          &:link, &:visited, &:active {
-            /*background-image: url('/img/bk-navi.png');*/
-            @include gradient($gray, $darker-gray);
             font-weight: bold;
             color: black;
             display: block;
@@ -22,9 +21,6 @@
             text-decoration: none;
             border-bottom: 1px solid #e8e8e8;
             overflow: hidden; }
-         &:hover {
-            background-image: url('/img/glossyback2.gif');
-            background-repeat: repeat-x; }
          .statusicon {                       // icon image that gets dynamically added to headers
             position: absolute;
             top: 5px;
