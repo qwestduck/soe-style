@@ -23,8 +23,6 @@
  *      Same as Type2 but different size for maintext buttons above video
  *   Type4
  *      Same as Type2 but different size for maintext buttons below video
- *   .first
- *      No left border
  *   .last
  *      No right border
  *   @include gradient
@@ -62,7 +60,6 @@
          display: block;
          width: 150px; } } }
 
-.first { border-left: none !important; }
 .last { border-right: none !important; }
 		 
 .buttonType0 {
