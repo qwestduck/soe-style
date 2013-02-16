@@ -18,12 +18,10 @@
 .button {
    display: block;
    float: left;
-   height: 40px;
+   @include button-height(40px);
    text-align: center;
    .label {
       display: block;
-      height: 40px;
-      line-height: 40px;
       font-weight: bold;
       font-size: 11px;
       text-decoration: none;
@@ -65,14 +63,8 @@
 
 .buttonType3 { 
     width: 176px;
-    height: 30px;
-    .label {
-        height: 30px;
-        line-height: 30px; } }
+    @include button-height(30px); }
 
 .buttonType4 { 
     width: 117px;
-    height: 25px;
-    .label {
-        height: 25px;
-        line-height: 25px; } }
+    @include button-height(25px); }
