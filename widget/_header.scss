@@ -1,7 +1,7 @@
 /* ######### HEADER - Large blue bar with school name, logo, etc */
 #header {
    #banner {
-      @include gradient($dark-blue, $darker-blue);
+      @include gradient($dark-blue, darken($dark-blue, 10%));
       width: 950px;
       height: 75px;
       margin-bottom: 2px;

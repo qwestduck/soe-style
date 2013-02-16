@@ -15,7 +15,7 @@
    #uhead5 { width: 60px; }
    #uhead6 {
       width: 80px;
-      @include gradient-with-hover($dark-red, $darker-red); }
+      @include button-gradient($dark-red); }
    #uhead7 { width: 100px; }
    #uhead8 { width: 45px; }
    #uhead9 { width: 57px; } }

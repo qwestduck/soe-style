@@ -21,9 +21,10 @@
   background-image:         linear-gradient(top, $from, $to);
 }
 
-@mixin gradient-with-hover($from, $to) {
-  @include gradient($from, $to);
-  &:hover { @include gradient(lighten($from, 5%), lighten($to, 5%)); }
+@mixin button-gradient($base) {
+  border-right: 1px solid darken($base, 10%);
+  @include gradient($base, darken($base, 10%));
+  &:hover { @include gradient(lighten($base, 5%), lighten(darken($base, 10%), 5%)); }
 }
 
 @mixin button-height($height) {

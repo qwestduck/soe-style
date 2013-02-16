@@ -66,8 +66,7 @@
 .last { border-right: none !important; }
 		 
 .buttonType0 {
-   border-right: 1px solid darken($dark-blue, 10%);
-   @include gradient-with-hover($dark-blue, $darker-blue);
+   @include button-gradient($dark-blue);
    .label { color: white; } }
 
 .buttonType1 {
@@ -75,8 +74,7 @@
    .label { color: navy; } }
 
 .buttonType2, .buttonType3, .buttonType4 {
-   border-right: 1px solid darken($gray, 10%);
-   @include gradient-with-hover($gray, $darker-gray);
+   @include button-gradient($gray);
    .label { color: #555; } }
 
 .buttonType3 { 
