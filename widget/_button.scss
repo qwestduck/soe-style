@@ -1,19 +1,40 @@
 /*   Classes:
- *   .button:                                A button contains the general layout of a button for this menu
+ *   .button:
+ *      A button contains the general layout of a button for this menu
  *   .label
- *   .buttonType#:	                         A buttonType# contains a specific layout that seperates buttons from the general .button layout
- *   .dropdown	                             A dropdown contains the styling for the hover dropdown of specified buttons
+ *   .buttonType#:
+ *      A buttonType# contains a specific layout that seperates buttons from 
+ *      the general .button layout
+ *   .dropdown
+ *      A dropdown contains the styling for the hover dropdown of specified 
+ *      buttons
  *
  *   Button Types
- *   Type0                                   Blue background, white text, lighter blue hover background, located to the right on the menu, all caps
- *   Type1                                   White background, navy text, no special hover behavior, located to the left on the menu
- *   Type2									 Grey background, dark grey text, lighter grey hover background, located in navigation, all caps
- *	 Type3									 Same as Type2 but different size for maintext buttons above video
- *	 Type4									 Same as Type2 but different size for maintext buttons below video
- *   .first                                  No left border
- *   .last                                   No right border
- *   @include gradient						 Creates a gradient on the buttons. The colours are controlled by variables in _colors.scss. Using this makes it much easier to change things across the board at one time
- *   darken/lighten							 Sass allows for subtle colour changes to be easily made with the lighten and darken functions, which cause the colours to be changed by a percentage instead of trying to figure out the hex values
+ *   Type0
+ *      Blue background, white text, lighter blue hover background, located to 
+ *      the right on the menu, all caps
+ *   Type1
+ *      White background, navy text, no special hover behavior, located to the 
+ *      left on the menu
+ *   Type2
+ *      Grey background, dark grey text, lighter grey hover background, 
+ *      located in navigation, all caps
+ *   Type3
+ *      Same as Type2 but different size for maintext buttons above video
+ *   Type4
+ *      Same as Type2 but different size for maintext buttons below video
+ *   .first
+ *      No left border
+ *   .last
+ *      No right border
+ *   @include gradient
+ *      Creates a gradient on the buttons. The colours are controlled by 
+ *      variables in _colors.scss. Using this makes it much easier to change 
+ *      things across the board at one time
+ *   darken/lighten
+ *      Sass allows for subtle colour changes to be easily made with the 
+ *      lighten and darken functions, which cause the colours to be changed by 
+ *      a percentage instead of trying to figure out the hex values
  */
 .button {
    display: block;
