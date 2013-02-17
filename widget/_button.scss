@@ -54,10 +54,9 @@
       padding: 5px;
       z-index: 16;
       line-height: 1.3em; }
-   &:hover {
-      .dropdown {
-         display: block;
-         width: 150px; } } }
+   &:hover .dropdown {
+      display: block;
+      width: 150px; } }
 
 .last { border-right: none !important; }
 		 
