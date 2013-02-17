@@ -1,0 +1,47 @@
+#audience, #navigation, #uhead {
+   height: 40px;
+   width: 1000px;
+}
+
+#audience {
+   #bttn1 { width:149px; }
+   #bttn2 { width:156px; }
+   #bttn3 { width:202px; }
+   #bttn4 { width:143px; }
+   #bttn5 { width:89px; }
+   #bttn6 { width:114px; }
+   #bttn7 { width:89px; } }
+
+/* ######### NAVINCLUDE - Gray horizontal menu just above the content area */
+#navigation {
+   margin-top: 2px;
+   #head1 { width: 104px; }
+   #head2 { width: 84px; }
+   #head3 { width: 119px; }
+   #head4 { width: 79px; }
+   #head5 { width: 184px; }
+   #head6 { width: 120px; }
+   #head7 { width: 131px; }
+   #head8 { width: 121px; } }
+/* END NAVINCLUDE ######### */
+
+/* ######### UHEAD - Small horizontal menu between the header and the navinclude */
+#uhead {
+   .weather_icon {
+      vertical-align: middle;
+      width: 20px;
+      height: 20px;
+      padding-right: 5px; }
+   #uhead0 { width: 116px; }
+   #uhead1 { width: 225px; }
+   #uhead2 { width: 60px; }
+   #uhead3 { width: 95px; }
+   #uhead4 { width: 105px; }
+   #uhead5 { width: 60px; }
+   #uhead6 {
+      width: 80px;
+      @include button-gradient($dark-red); }
+   #uhead7 { width: 100px; }
+   #uhead8 { width: 45px; }
+   #uhead9 { width: 57px; } }
+/* END UHEAD ######### */
