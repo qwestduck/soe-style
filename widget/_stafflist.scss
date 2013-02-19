@@ -7,11 +7,8 @@
    width: 650px;
 
    a {
-      text-decoration: none;
       color: navy;
-      &:link, &:visited, &:hover {
-         text-decoration: none;
-         color: navy; } } }
+      &:link, &:visited, &:hover { color: navy; } } }
 
 #content .stafflist ul {
    padding: 0;
