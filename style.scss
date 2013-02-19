@@ -1,29 +1,51 @@
-/* Welcome to my CSS Nightmare!
- * Hopefully this Table of Contents will help you find what you are looking for.
- * Pro-tip: ctrl+f to search for the section name
+/*   Welcome to my CSS Nightmare!
+ *   Hopefully this Table of Contents will help you find what you are looking for.
  *
- * HEADER - Large blue bar with school name, logo, etc
- * UHEAD - Small horizontal menu between the header and the navinclude
- * NAVINCLUDE - Gray horizontal menu just above the content area
- * CONTENT/INNERCONTENT - Content area stylings
- *    ## Renders tables of courses and course information
- *    ## Provides consistent behavior for titles and subtitles
- * OVERLAY - Stylings for overlays and content in overlays
- *    ## Calendar overlays - Displays schedules for time sensitive events
- *    ## Profile overlays - Usually displays personal information for faculty and staff
- *    ## Course overlays - Usually displays information about a course (class)
- * FOOTER - Section at the bottom of the page for copyright and accessibility information
- * LEFTCOL - Grey vertical menu found on the left side of most secondary pages
- * STAFFLIST - gray-ish shaded rectangles usually with contact info inside of them
- * NEWSBLOCK - Tabbed UI element that normally holds news
- * PRINTER - Make pages printer friendly
+ *   _colors.scss
+ *      The color theme of the site as well as any special event themes.
+ *   _mixins.scss
+ *      SASS functions used to insert commonly repeated sections of SASS.
+ *   _print.scss
+ *      Makes the pages printer friendly.
+ *   _reset.scss
+ *      Normalize all tags to provide a common starting style between browsers.
+ *   widget/_button.scss
+ *      Defines all of the "buttons". A button is a small block area with
+ *      hover and click behaviors. The area also has a label which can be
+ *      either a graphic or line of text that identifies the behavior of the
+ *      button.
+ *   widget/_buttonbar.scss
+ *      Defines a group of buttons.
+ *   widget/_footer.scss
+ *      Section at the bottom of the page for copyright and accessibility
+ *      information
+ *   widget/_header.scss
+ *      Large blue bar with school name, logo, etc
+ *   widget/_lmenu.scss
+ *      Grey vertical menu found on the left side of most secondary pages
+ *   widget/_newsblock.scss
+ *      Tabbed UI element that usually holds news items.
+ *   widget/_overlay.scss
+ *      Defines a popup content area. Calendar overlays display schedules for
+ *      time sensitive events. Profile overlays usually display personal
+ *      information for faculty and staff. Course overlays usually display
+ *      information about a course (class).
+ *   widget/_scrollable.scss
+ *      An area where items can be shuffled through using "previous" and "next"
+ *      control buttons.
+ *   widget/_stafflist.scss
+ *      Gray-ish shaded rectangles usually with contact info inside of them.
+ *   widget/_tooltip.scss
+ *      A pop-up modal content area that appears close to the mouse pointer
+ *      when hovering over a trigger element.
  */
 
 @import "_mixins.scss";
 @import "_colors.scss";
 @import "_reset.scss";
 
-.clear { clear: both; }                      // Used to properly align things after floating elements. Don't delete this or you'll break stuff!
+/* Used to properly align things after floating elements. Don't delete this or you'll break stuff! */
+.clear { clear: both; }
 
 html, body { font-family: Arial, Helvetica, sans-serif; }
 
@@ -35,8 +57,9 @@ p {
    margin: 1em 0;
    line-height: 1.5em; }
 
+/* Align gallery images in a grid. Don't forget this is used by all the departments and various other pages! */
 .gallery {
-   li {                                // Align gallery images in a grid. Don't forget this is used by all the departments and various other pages!
+   li {
       display: inline-block;
       list-style: none;
       width: 175px;
