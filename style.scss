@@ -16,6 +16,9 @@
  *      button.
  *   widget/_buttonbar.scss
  *      Defines a group of buttons.
+ *   widget/_flow.scss
+ *      Defines generic flow elements such as special tables and photo
+ *      galleries.
  *   widget/_footer.scss
  *      Section at the bottom of the page for copyright and accessibility
  *      information
@@ -154,6 +157,7 @@ p {
 @import "widget/_header.scss";
 @import "widget/_button.scss";
 @import "widget/_buttonbar.scss";
+@import "widget/_flow.scss";
 @import "widget/_footer.scss";
 @import "widget/_stafflist.scss";
 @import "widget/_overlay.scss";
