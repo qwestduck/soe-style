@@ -90,10 +90,6 @@ p {
    font-size: 12px;
    height: 600px;
    overflow: auto;
-   h1.content_title {
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto; }
    p, ul, li {
       padding: 2px 0 2px 0;
       line-height: 18px; }
@@ -121,10 +117,6 @@ p {
       margin-bottom: 4px;
       font-weight: normal; }
    p { margin-top: 0; } }
-
-#faculty #content {
-   padding-left: 25px;
-   padding-right: 75px; }
 
 /* ## Provides consistent behavior for titles and subtitles */
 .supertitle {
