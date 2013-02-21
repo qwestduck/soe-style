@@ -6,37 +6,29 @@
    width: 650px;
    a {
       color: navy;
-      &:link, &:visited, &:hover { color: navy; } } }
-
-.stafflist .image {
-   width: 300px;
-   float: right;
-   list-style: none; }
-
-.stafflist .image .thumb img {
-   width: 77px;
-   height: 77px; }
-
-.stafflist .contact .website { clear: right; }
-
-.stafflist img {
-   float: right;
-   margin: 0 0 10px 10px;
-   padding: 3px;
-   border: 1px solid #ccc;
-   background: white; }
-
-.stafflist object,
-.stafflist iframe {
-   position: relative;
-   margin-left: 10px;
-   padding-bottom: 5px;
-   float: right;
-   border: none; }
-
-.stafflist .contact {
-   list-style: none !important;
-   padding: 0 !important; }
-
-.stafflist .contact li { font-weight: bold; }
+      &:link, &:visited, &:hover { color: navy; } }
+   .image {
+      width: 300px;
+      float: right;
+      list-style: none;
+      .image .thumb img {
+         width: 77px;
+         height: 77px; } }
+   .stafflist .contact {
+      list-style: none !important;
+      padding: 0 !important;
+      li { font-weight: bold; }
+      .website { clear: right; } }
+   img {
+      float: right;
+      margin: 0 0 10px 10px;
+      padding: 3px;
+      border: 1px solid #ccc;
+      background: white; }
+   object, iframe {
+      position: relative;
+      margin-left: 10px;
+      padding-bottom: 5px;
+      float: right;
+      border: none; } }
 /* END STAFFLIST ######### */
