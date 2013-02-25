@@ -1,0 +1,130 @@
+.rs-slideshow {
+	height: 337px;
+	overflow: hidden;
+	position: relative;
+	width: 590px;
+}
+	 
+.rs-slideshow .slide-container {
+	background-color: #444;
+	height: 100%;
+	left: 0;
+	overflow: hidden;
+	top: 0;
+	width: 100%;
+}
+		
+.slide-container .slide-caption {
+	display:block;
+	width:100%;
+	position:absolute;
+	bottom:0;
+	left:0;
+	right:0;
+	color:white;
+	padding-left:20px;
+	margin-bottom:20px;
+	text-align:left;
+	background-image:url(/img/slideshow/captionBackground.png);
+}
+
+.slide-container .slide-caption h3 {
+	margin:0;
+	padding-bottom:10px;
+	width:555px;
+	color: white;
+	font-weight:bold;
+	font-style:normal;
+}
+		
+.slide-container .slide-caption p {
+	display:none;
+	margin:0;
+	padding-bottom:5px;
+	width:555px;
+}
+		
+/*.slide-container:hover .slide-caption {
+	background-image:url(/img/slideshow/captionBackground.png);
+}*/
+
+.slide-container:hover .slide-caption p {
+	display:block;
+}
+		 
+.rs-slideshow .slide-container img {
+	height:100%;
+	width:100%;
+}
+		 
+/* Hide the slide data container */
+.rs-slideshow .slides {
+	display: none;
+}
+
+#slideshow-div .slide-container {
+	background-color:black;
+}
+
+#rs-controls-slideshow-div{
+	position:absolute;
+	height:20px;
+	width:590px;
+	bottom:8px;
+	background-image:url(/img/slideshow/controlsBackground.png);
+	background-repeat:repeat-x;
+}
+
+#rs-controls-slideshow-div a {
+	height:18px;
+	border-style:solid;
+	border-top-color:#464646;
+	border-left-color:#292929;
+	border-right-color:#151515;
+	border-width:1px 1px 0px 1px;
+	padding-left:5px;
+	padding-right:5px;
+	color:#696969;
+	text-decoration:none;
+	text-align:center;
+	display:block;
+	float:left;
+}
+
+#rs-controls-slideshow-div a:hover{
+	color:#B8B8B8;
+}
+
+#rs-controls-slideshow-div a.rs-play-pause {
+	width:50px;
+}
+		
+#rs-controls-slideshow-div a.rs-paused {
+	background-image:url(/img/slideshow/playButton.png);
+	background-repeat:no-repeat;
+	background-position:center;
+}
+		
+#rs-controls-slideshow-div a.rs-playing{
+	background-image:url(/img/slideshow/pauseButton.png);
+	background-repeat:no-repeat;
+	background-position:center;
+}
+
+#rs-controls-slideshow-div a.rs-prev,
+#rs-controls-slideshow-div a.rs-next{
+	width:20px;
+}
+
+#rs-controls-slideshow-div .rs-index-list {
+	list-style:none;
+	margin:0;
+}
+		
+#rs-controls-slideshow-div .rs-index-list li {
+	float:left;
+}
+		
+#rs-controls-slideshow-div .rs-index-list .rs-active {
+	color:white;
+}
