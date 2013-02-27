@@ -81,16 +81,18 @@ h4 {
    position: relative;
    margin-top: 3px;
    height: 345px;
-   #maintext {
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 355px;
-      height: 337px;
-      background-color: $gray;
-      color: #3f3a26;
-      overflow: hidden;
-      font-size: 13px; } }
+}
+
+#maintext {
+   position: absolute;
+   top: 0;
+   right: 0;
+   width: 355px;
+   height: 337px;
+   background-color: $gray;
+   color: #3f3a26;
+   overflow: hidden;
+   font-size: 13px; }
 
 #container {
    margin: auto;
