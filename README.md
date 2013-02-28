@@ -21,6 +21,11 @@ CSS syntax.
 Build
 =====
 
+1. Open a putty session (but not as root!).
 1. Make sure sass is properly installed.
 1. cd $WEBROOT/css
-1. sass --watch sass:compiled --style compressed &
+1. 'sass --watch sass:compiled --style compressed &' to start a sass daemon.
+1. While the daemon is running, make changes to the sass files (in any client).
+1. When done, 'fg' to bring sass to the foreground.
+1. 'Ctrl+C' to kill the foreground daemon.
+1. 'logout' to kill the session.
